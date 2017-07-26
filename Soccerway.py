@@ -42,7 +42,7 @@ def spiderinfo(url):
     soup = BeautifulSoup(plain_text, 'html.parser')
     for (link, link2) in zip(soup.findAll('dt'), soup.findAll('dd')):
         print("\t" + link.string + ": " + link2.string)
-    input("Continue?")
+    # input("Continue?")
 
 
 def remove_accents(input_str):
